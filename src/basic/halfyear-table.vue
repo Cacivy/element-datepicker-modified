@@ -72,3 +72,11 @@
       }
   };
 </script>
+
+<style lang="scss">
+.el-halfyear-table {
+    .cell {
+        margin: 0 auto;
+    }
+}
+</style>

@@ -3,18 +3,18 @@
     <tbody>
     <tr>
       <td :class="getCellStyle(0)">
-        <a class="cell">一季度</a>
+        <a class="cell" index="0">一季度</a>
       </td>
       <td :class="getCellStyle(1)">
-        <a class="cell">二季度</a>
+        <a class="cell" index="1">二季度</a>
       </td>
     </tr>
     <tr>
       <td :class="getCellStyle(2)">
-        <a class="cell">三季度</a>
+        <a class="cell" index="2">三季度</a>
       </td>
       <td :class="getCellStyle(3)">
-        <a class="cell">四季度</a>
+        <a class="cell" index="3">四季度</a>
       </td>
     </tr>
     </tbody>
@@ -73,9 +73,17 @@ export default {
             const target = event.target;
             if (target.tagName !== 'A') return;
             if (hasClass(target.parentNode, 'disabled')) return;
-            const column = target.parentNode.cellIndex;
+            const column = parseInt(target.getAttribute('index'));
             this.$emit('pick', column);
         }
     }
 };
 </script>
+
+<style lang="scss">
+.el-quarter-table {
+    .cell {
+        margin: 0 auto;
+    }
+}
+</style>
