@@ -19,7 +19,7 @@ npm i https://github.com/Cacivy/element-datepicker-modified.git
 
 import DatePicker from 'element-datepicker-modified'
 import 'element-datepicker-modified/dist/static/css/index.css'
-import 'element-datepicker-modified/lib/date-picker.css' // or import 'element-ui/lib/theme-default/index.css';
+import 'element-datepicker-modified/lib/date-picker.css' // or import 'element-ui/lib/theme-default/index.css'
 import 'element-datepicker-modified/lib/icon.css' // 同上
 
 ```
