@@ -13,12 +13,15 @@
     </tr>
     <tr
       class="el-date-table__row"
-      v-for="row in rows"
+      v-for="(row, index) in rows"
+      :key="index"
       :class="{ current: isWeekActive(row[1]) }">
       <td
         v-for="cell in row"
+        :key="cell.text"
         :class="getCellClasses(cell)"
-        v-text="cell.type === 'today' ? t('el.datepicker.today') : cell.text"></td>
+        v-text="cell.type === 'today' ? t('el.datepicker.today') : cell.text">
+      </td>
     </tr>
     </tbody>
   </table>

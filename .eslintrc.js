@@ -38,6 +38,7 @@ module.exports = {
         'no-empty': 0,
         'no-undefined': 0,
         // 该规则对function和class不起作用
-        'no-use-before-define': [2, { "functions": false, "classes": false }]
+        'no-use-before-define': [2, { "functions": false, "classes": false }],
+        "complexity": ["error", 50]
     }
 };

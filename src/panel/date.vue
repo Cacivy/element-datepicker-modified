@@ -301,7 +301,7 @@
               if (selectionMode === 'halfyear') {
                   this.resetDate();
                   let startMonth = new Date(this.date.getFullYear(), halfyear * 6, 1);
-                  let endMonth = new Date(this.date.getFullYear(), halfyear * 6 + 5, halfyear + 30); // 6.30 12.31 
+                  let endMonth = new Date(this.date.getFullYear(), halfyear * 6 + 5, halfyear + 30); // 6.30 12.31
                   this.$emit('pick', [startMonth, endMonth]);
               }
           },

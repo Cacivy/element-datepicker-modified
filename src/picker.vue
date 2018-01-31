@@ -520,3 +520,30 @@ export default {
     }
 };
 </script>
+
+<style lang="scss">
+.el-quarter-table, .el-halfyear-table {
+  td {
+    text-align: center;
+    padding: 20px 3px;
+    cursor: pointer;
+
+    .cell {
+      width: 48px;
+      height: 32px;
+      display: block;
+      margin: 0 auto;
+      padding: 5px;
+      line-height: 32px;
+      color: #48576a;
+    }
+
+    &.current:not(.disabled) {
+      .cell {
+        background-color: #20a0ff !important;
+        color: #fff;
+      }
+    }
+  }
+}
+</style>

@@ -1,0 +1,21 @@
+
+.el-quarter-table td, .el-halfyear-table td {
+  text-align: center;
+  padding: 20px 3px;
+  cursor: pointer;
+}
+.el-quarter-table td .cell, .el-halfyear-table td .cell {
+    width: 48px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 32px;
+    color: #48576a;
+}
+.el-quarter-table td.current:not(.disabled) .cell, .el-halfyear-table td.current:not(.disabled) .cell {
+    background-color: #20a0ff !important;
+    color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map*/
